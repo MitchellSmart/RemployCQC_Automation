@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+-<suite configfailurepolicy="continue" verbose="1" name="ALLTests">
+
+<!-- Entity Creation -->
+-<test name="EntityCreation">
+-<classes>
+
+<class name="scenarios.EntityCreation.Creation_001_Location"/>
+<class name="scenarios.EntityCreation.Creation_002_Inspector"/>
+<class name="scenarios.EntityCreation.Creation_003_Inspection"/>
+
+</classes>
+</test>
+
+<!-- Combined Workflows -->
+-<test name="CombinedWorkflows">
+-<classes>
+
+<class name="scenarios.CombinedWorkflows.Creation_001_InspectionWithMatchedEvents"/>
+
+</classes>
+</test>
+
+<!-- Generic -->
+-<test name="Generic">
+-<classes>
+
+<class name="scenarios.Generic.GF_001_Login_Logout"/>
+<class name="scenarios.Generic.for_testing_use_only"/>
+
+</classes>
+</test>
+
+</suite>
